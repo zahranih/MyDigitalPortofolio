@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portofolio Zahra</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <h2 class="logo">Zahra.</h2>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <button id="theme-toggle" type="button">Ganti Tema</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Bagian Home -->
+      <section id="home" class="home">
+        <div class="home-text">
+          <p>Halo, perkenalkan!</p>
+
+          <h1>Hafizhah Azzahrani</h1>
+
+          <h3>Mahasiswa Bisnis Digital</h3>
+
+          <p>
+            Saya adalah mahasiswa Bisnis Digital yang tertarik pada dunia
+            bisnis, teknologi, dan pemasaran digital. Saat ini saya sedang
+            belajar membuat website menggunakan HTML, CSS, dan JavaScript.
+          </p>
+
+          <a href="#tentang" class="button">Tentang Saya</a>
+        </div>
+
+        <div class="home-image">
+          <img src="zahra.jpeg" alt="Foto profil Zahra" />
+        </div>
+      </section>
+
+      <!-- Bagian Tentang -->
+      <section id="tentang">
+        <h2>Tentang Saya</h2>
+
+        <p>
+          Nama saya Hafizhah Azzahrani. Saya merupakan mahasiswa S1 Bisnis
+          Digital di UIN K.H. Abdurrahman Wahid Pekalongan. Saya senang
+          mempelajari hal baru, membaca, mendengarkan podcast, dan menonton
+          film.
+        </p>
+
+        <p>
+          Melalui perkuliahan dan kegiatan organisasi, saya belajar mengenai
+          komunikasi, kerja sama tim, pengelolaan kegiatan, serta strategi
+          bisnis. Saya juga ingin mengembangkan kemampuan di bidang teknologi
+          digital.
+        </p>
+      </section>
+
+      <!-- Bagian Pendidikan -->
+      <section id="pendidikan">
+        <h2>Pendidikan</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Jenjang</th>
+              <th>Nama Institusi</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Perguruan Tinggi</td>
+              <td>UIN K.H. Abdurrahman Wahid Pekalongan</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>SMA</td>
+              <td>SMA Islam Ahmad Yani Batang</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Bagian Skill -->
+      <section id="skill">
+        <h2>Skill</h2>
+
+        <p>Berikut beberapa kemampuan yang sedang saya kembangkan.</p>
+
+        <div class="skill-container">
+          <div class="skill-card">
+            <h3>Canva</h3>
+            <p>Membuat desain dan konten visual.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Microsoft Office</h3>
+            <p>Mengolah dokumen dan presentasi.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>Komunikasi</h3>
+            <p>Berkomunikasi dan bekerja sama dalam tim.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>HTML dan CSS</h3>
+            <p>Mempelajari dasar pembuatan website.</p>
+          </div>
+
+          <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Mempelajari dasar interaksi pada website.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian Project -->
+      <section id="project">
+        <h2>Project dan Pengalaman</h2>
+
+        <div class="project-container">
+          <div class="project-card">
+            <h3>Seminar Nasional BIGIFEST 2026</h3>
+
+            <p>
+              Terlibat sebagai ketua pelaksana dalam perencanaan dan koordinasi
+              kegiatan seminar nasional mengenai digitalisasi UMKM dan literasi
+              finansial.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+              Membuat website portofolio sederhana sebagai latihan mata kuliah
+              Web Programming dengan menggunakan HTML, CSS, dan JavaScript.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian Kontak -->
+      <section id="kontak">
+        <h2>Hubungi Saya</h2>
+
+        <p>Silakan isi formulir berikut untuk menyampaikan pesan.</p>
+
+        <form id="contact-form" novalidate>
+          <label for="nama">Nama Lengkap</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan nama"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Masukkan email"
+          />
+
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            placeholder="Tulis pesan kamu"
+          ></textarea>
+
+          <button type="submit" class="button">Kirim Pesan</button>
+
+          <p id="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Hafizhah Azzahrani</p>
+      <p>Website Portofolio Web Programming</p>
+    </footer>
+  </body>
+</html>
